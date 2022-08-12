@@ -9,10 +9,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 /** Difference between findElement and findElements method 
  * findElement: returns the first most element found by the given locator strategy, if no element
- * found it throws ElementNotFoundException
+ * found it throws NoSuchElementException
  * findElements : returns the list of all the elements found by the given locator strategy, if no
  * element found it returns empty list
- * @author Dell
+ * @author Shubhangi Goel
  *
  */
 
