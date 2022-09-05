@@ -23,6 +23,10 @@ public class DragAndDropActionsDemo {
 		
 		//perform drag and drop
 		actions.dragAndDrop(source, target).perform();
+		
+		//verify dropped message
+		String text= target.getText();
+		System.out.println("Drop Verified : "+text);
 		System.out.println("Drag and Drop Action performed succesfully!!!!!");
 		
 		//close browser
