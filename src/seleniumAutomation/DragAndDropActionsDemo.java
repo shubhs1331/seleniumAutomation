@@ -26,8 +26,12 @@ public class DragAndDropActionsDemo {
 		
 		//verify dropped message
 		String text= target.getText();
-		System.out.println("Drop Verified : "+text);
-		System.out.println("Drag and Drop Action performed succesfully!!!!!");
+		if(text.equals("Dropped!")) {
+			System.out.println("PASSED : Source is dropped at target");
+		}
+		else {
+			System.out.println("FAIL : Source is not dropped at target");
+		}
 		
 		//close browser
 		driver.quit();
