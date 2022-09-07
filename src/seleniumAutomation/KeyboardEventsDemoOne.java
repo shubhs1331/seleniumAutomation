@@ -1,6 +1,7 @@
 /**
  * Keyboard events using sendkeys method, The assertion will fail as we cannot 
- * combine key sequences like SHIFT , CONTROL. Use Actions class instead of sendkeys
+ * combine key sequences like SHIFT , CONTROL. Use Actions class instead of 
+ * sendkeys
  */
 package seleniumAutomation;
 
