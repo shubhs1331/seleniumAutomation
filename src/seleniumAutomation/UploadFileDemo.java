@@ -21,11 +21,11 @@ public class UploadFileDemo {
 		
 		//find upload file web element
 		WebElement uploadFile = driver.findElement(By.id("uploadPicture"));
-		uploadFile.sendKeys("C:\\Users\\Dell\\Documents\\sampleFile.txt");
+		uploadFile.click();
+		//uploadFile.sendKeys("C:\\Users\\Dell\\Documents\\sampleFile.txt");
 		Thread.sleep(3000);
 		System.out.println("File Uploaded Successfully!!!");
 		
-		Actions actions = new Actions(driver);
 		//close browser
 		driver.quit();
 
