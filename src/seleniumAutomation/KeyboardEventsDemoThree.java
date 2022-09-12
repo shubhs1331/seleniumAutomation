@@ -37,7 +37,7 @@ public class KeyboardEventsDemoThree {
 		.perform();
 		
 		//copy the current address
-		actions.keyDown(Keys.CONTROL).sendKeys("C").keyUp(Keys.CONTROL).build()
+		actions.keyDown(Keys.CONTROL).sendKeys("C").sendKeys(Keys.NULL).build()
 		.perform();
 		
 		//scroll the vertical bar to see permanent address field
