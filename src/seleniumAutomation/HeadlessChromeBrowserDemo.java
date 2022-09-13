@@ -10,6 +10,8 @@ public class HeadlessChromeBrowserDemo {
 		// create instance of ChromeOptions to change default behavior of chrome
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("headless");
+		//OR we can use setHeadless method
+		//options.setHeadless(true);
 		ChromeDriver driver = new ChromeDriver(options);
 		
 		//launch browser
