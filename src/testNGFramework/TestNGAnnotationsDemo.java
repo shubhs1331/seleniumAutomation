@@ -52,6 +52,7 @@ public class TestNGAnnotationsDemo {
 		System.out.println("Inside Before Class Method");
 	}
 	
+	//test Three will execute before test Two, it will run in alphabetic order
 	@Test
 	public void testThree() {
 		System.out.println("Inside Test Three");
