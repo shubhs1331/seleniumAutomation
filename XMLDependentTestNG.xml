@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+	<groups>
+		<dependencies>
+			<group depends-on="openbrowser" name="login"></group>
+			<group depends-on="login" name="viewdashboard"></group>
+			<group depends-on="viewdashboard" name="logout"></group>
+		</dependencies>
+	</groups>
+		<classes>
+			<class name="testNGFramework.XMLDependentTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
